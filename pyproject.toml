@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "keylens"
+version = "0.1.0"
+description = "Поиск утекших API-ключей и токенов в файлах"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "acciv", email = "jumpscout@proton.me" }]
+keywords = ["security", "api-keys", "secrets", "cli", "scanner"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Security",
+]
+
+[project.scripts]
+keylens = "keylens.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["keylens*"]
+
+[tool.setuptools.package-data]
+keylens = ["py.typed"]
