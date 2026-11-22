@@ -1,0 +1,6 @@
+# GitHub Linguist: явно указываем языки реализаций сканера.
+*.go   linguist-language=Go
+*.rs   linguist-language=Rust
+*.cpp  linguist-language=C++
+*.hpp  linguist-language=C++
+Makefile linguist-language=Makefile

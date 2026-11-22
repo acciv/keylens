@@ -1,0 +1,14 @@
+[package]
+name = "keylens"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "keylens"
+path = "src/lib.rs"
+
+[[bin]]
+name = "keylens"
+path = "src/main.rs"
+
+[dependencies]

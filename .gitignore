@@ -11,3 +11,13 @@ venv/
 .idea/
 .vscode/
 .env
+
+# Go
+/go/keylens
+
+# Rust
+/rust/target/
+
+# C++
+/cpp/keylens
+/cpp/tests/test_scanner
